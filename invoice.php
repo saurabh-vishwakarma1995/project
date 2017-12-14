@@ -112,6 +112,8 @@
         background-size: 100%;
         color: black;
         font-weight: bold;
+        margin-left: 225px;
+
     }
 
 
@@ -131,9 +133,9 @@
 </div>
 
     <div id="div1" class="invoice-box" align="center" >
-        <img src="letterhead.png" width="1100" hspace="50" height="150">
+        <img src="letterhead.png" width="1150" hspace="28" height="150">
         <br><br><br><br><br>
-        <table cellpadding="0" cellspacing="0" align="center" border="1">
+        <table cellpadding="120" cellspacing="0" align="center" border="1">
             <tr class="top">
                 <td colspan="2">
                     <table>
@@ -153,7 +155,7 @@
                     <table style="background-size: 100%;">
                         <tr>
                             
-                            <td>
+                            <td style="font-size: 25px;">
                                 <br>
                                 <br>
                                   Patient Name: {{billDetails.patient_name}}
@@ -166,7 +168,7 @@
                                 <br>
                             </td>
                             
-                            <td>
+                            <td style="font-size: 25px;">
                                 <br>
                                 <br>
                                 Bill No. #: {{billDetails.bill_no}}
@@ -205,22 +207,22 @@
             </tr>
  -->
             <tr class="heading">
-                <td align="center">
+                <td align="center" style="font-size: 35px;">
                     Particulars
                 </td>
 
-                <td>
+                <td style="font-size: 35px; padding-right:230px;" align="center">
                     Price
                 </td>
             </tr>
             <tr class="item">
-                <td>
+                <td style="font-size: 25px;">
                 <br>
                     {{billDetails.particulars}}
                     <br>
                 </td>
 
-                <td>
+                <td style="font-size: 25px;">
                 <br>
                     {{billDetails.amount}}
                     <br>
